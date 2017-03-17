@@ -1,0 +1,99 @@
+\cvsection{Experience}
+\begin{cventries}
+  \cventry
+    {Remote Attestation for Embedded Devices (Project Leader, on-going Project}
+    {Graduate Research, Research in Software and System Security Lab(Prof. Long Lu)}
+    {Stony Brook University, NY, U.S.A.}
+    {Aug 2016 -  now}
+    {
+     \begin{cvitems}
+        \item {\textbf{Motivation}: the state-of-art remote attestation focus mostly on code integrity, which is not enough considering control-flow hijacking attacks, C-FLAT move it forward by introducing control flow verification, but the overhead is quite high, and it has limited cover on data-oriented attack . While the real world attacks targeting at IoT devices are becoming more and more complex, like Stuxnet, Mirai malware. This work aims at improving the state-of-art remote attestation by covering both control-flow and critical data-flow verification with high efficiency.}
+        \item {\textbf{Key Idea}: First, improving the efficiency of control-flow verification by reducing world-switch frequency and offering better design of hash-mechanism.Second, introducing critical data-flow verification using compiler-based instrumentation.}
+        \item {This is still an on-going project, while the current evaluation shows that it is a quite promising work, so far, for control-flow verification, it brings tens of times improvement on overhead and a more wide range of adoption.}
+      \end{cvitems}
+    }
+  \cventry
+    {Researcher for <Shreds: Fine-grained Execution Units with Private Memory>}
+    {Graduate Research, Research in Software and System Security Lab(Prof. Long Lu)}
+    {Stony Brook University, NY, U.S.A.}
+    {Aug 2015 - Dec 2015}
+    {
+      \begin{cvitems}
+        \item {\textbf{Motivation}: current memory isolation/protection provided by the OS are at process level, which means once attacker hijacks the control flow of program, the whole memory of the process is exposed to the attacker. It's bad. Shreds project tries to provide the programmer a set of hardware-backed OS primitives that help programmer protect its secrets even when the process is compromised. Shreds make an innovative use of ARM domain memory management mechanism and the basic idea is that the secrets is only open to access when the programmer needs it, otherwise it is kept in locking state.}
+        \item {\textbf{Contribution}: Shreds has two key components, a S-compiler which helps make sure code inside shred won't leak secrets and is security-augmented, a S-driver that functions as a kernel module and handles the secure memory allocation and management. My contribution in this project is offering an optimized design and implementation of the S-driver, which is a modularized  thread-safe secure memory management driver.}
+        \item {Besides, I also implement the memory domain fault handler which cooperates with the S-driver. and provide a user interface as well as a run-time helper library.}
+      \end{cvitems}
+    }
+  \cventry
+    {PLUM OS: People Like U and Me can write OS}
+    {Graduate Course Project(OS): Implement an OS from Scratch for x64 architecture(Finished Alone)}
+    {Stony Brook University, NY, U.S.A.}
+    {Aug 2015 - Dec 2015}
+    {
+      \begin{cvitems}
+        \item {Implement the PLUM OS totally from scratch, which is a preemptive OS that support virtual memory, process management, terminal, simple tarfs file system and so on.}
+        \item {Support demand-paging and copy-on-write, process tracking(ps, kill -9, background running), short-cut for process and screen management(Ctrl-C, Ctrl-L), as well as executing shell scripts.}
+        \item {Implement the corresponding simple libc library and a user shell, including some simple user command like ls, cd, cat, ps, kill and so on.}
+        %\item {Work on the project independently. Get an A and an exemption from the final exam.}
+      \end{cvitems}
+    }
+   \cventry
+    {Compiler Design}
+    {Graduate Course Project(Compiler Design): Implement a Compiler for a Event Processing Language E-{}-{}(Team Work)}
+    {Stony Brook University, NY, U.S.A.}
+    {Aug 2016 - Dec 2016}
+    {
+      \begin{cvitems}
+        \item {Implement the Compiler for language E-{}-{} in C++, which is an event processing language that support basic data types, functions, events, and rules.}
+        \item {Use lex and bison to do lexical and grammar analysis, generating AST, implementing type-checker, and finally we need to output the IR(an assembly style language) , which will be translated into native binary code with the tool provided by professor.}
+        \item {This course offers a great chance to build our own compiler from scratch and a good chance to practice programming with C++.}
+      \end{cvitems}
+    }
+  \cventry
+    {Implementing Linux Based OS for UniCore64 Architecture}
+    {Graduate Research, OS Group, Micro-Processor Research\&Development Center(Prof. Xuetao Guan)}
+    {Peking University, Beijing, China}
+    {Sep 2012 - Aug 2013}
+    {
+      \begin{cvitems}
+        \item {UniCore-III processor(based on UniCore64 architecture) is designed by Micro-Processor Research\&Development Center of Peking University, which is a 64-bit, multi-core and superscalar micro-processor.}
+        \item {Implement the low-level virtual memory and process management interface for Linux on UniCore64 Architecture. And gain rich Linux kernel development and debugging experiences}
+        \item {Design and implement a tool named FuncTrace to assist kernel-debugging, which is a QEMU trace plugin with a analysis tool written in python. It helps locate low level kernel bugs. This tool was widely used within our lab.}
+      \end{cvitems}
+    }
+    \cventry
+    {Extending QEMU for UniCore64 Architecture}
+    {Graduate Research, OS Group, Micro-Processor Research\&Development Center(Prof. Xuetao Guan)}
+    {Peking University, Beijing, China}
+    {Sep 2012 - Aug 2013}
+    {
+      \begin{cvitems}
+        \item {Adding support for UniCore64 architecture in QEMU, which is a generic and open source machine emulator and virtualizer.}
+        \item {Emulating PCI-host-bridge for PKUnity SoC, supporting PCI IDE\&Network devices in QEMU for UniCore64 architecture.}
+        \item {Adding PCI-host-bridge driver in Linux kernel for UniCore64 architecture.}
+      \end{cvitems}
+    }
+  \cventry
+    {Japanese Dictionary from scratch}
+    {Toy Project Using Python GUI(Just for fun)}
+    {Peking University, Beijing, China}
+    {Aug 2013}
+    {
+      \begin{cvitems}
+        \item {\textbf{Motivation}: current on-line Japanese dictionaries recommend long and difficult sentences which are possibly crawled from news website. Those sentences are generally too hard for beginners. Which motivate me to build my own Japanese dictionary that can recommend rich and easy sample sentences for beginners.}
+        \item {Build my own Japanese dictionary in python, which is a combination of web crawler, NLP and Japanese languages skills.}
+        \item {Implement a new sentences recommending strategy incorporating the idea of ranking the sentences by the 'complexity' , which is calculated  on the length and the word frequency of the sentences.}
+      \end{cvitems}
+    }
+  \cventry
+    {A Search Engine Prototype from Scratch}
+    {Bachelor Thesis Project}
+    {HUST, Wuhan, China}
+    {Feb 2012 - May 2012}
+    {
+      \begin{cvitems}
+        \item {Build a search engine from scratch and delve into the inner details of a search engine, like building a web page crawler, setting up reverse index for docs, designing page-rank strategies, preparing page digest as well as showing the results via web interface.}
+        \item {Support alternate page-ranking strategies, including TF/IDF, PageRank, LSA, etc}
+      \end{cvitems}
+    }
+\end{cventries}
